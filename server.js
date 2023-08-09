@@ -32,33 +32,6 @@ app.use(bodyParser.json());
 app.use(cors())
 
 
-const database = {
-    users:[
-        {
-            id: "123",
-            name:'Tre',
-            email: 'tretre@gmail.com',
-            password: 'mma',
-            entries: 0,
-            joined: new Date().toDateString
-        },
-        {
-            id: "124",
-            name:'Anne',
-            email: 'anne@gmail.com',
-            password: 'bon',
-            entries: 0,
-            joined: new Date().toDateString
-        }
-    ],
-    login: [
-        {
-            id:'987',
-            hash:'',
-            email:'joesands@gmail.com'
-        }
-    ]
-}
 
 app.get('/',(req,res) => {res.send('it is working')})
 
